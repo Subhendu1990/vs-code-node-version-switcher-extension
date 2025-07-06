@@ -1,0 +1,38 @@
+{
+  "name": "vs-code-node-version-switcher-extension",
+  "displayName": "Vs Code Node Version Switcher",
+  "version": "0.0.1",
+  "description": "Quickly switch Node.js versions using nvm from VSCode",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "nodeVersionSwitcher.selectVersion",
+        "title": "Node: Select Node Version"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
+  },
+  "keywords": [
+    "node-version-switcher",
+    "vs-code-extension",
+    "nvm"
+  ],
+  "author": "Subhendu Patra",
+  "license": "ISC"
+}

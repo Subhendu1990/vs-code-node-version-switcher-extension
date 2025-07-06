@@ -1,0 +1,9 @@
+# Node
+node_modules/
+
+# Build output
+out/
+
+# VSCode
+.vscode/*
+!.vscode/launch.json
