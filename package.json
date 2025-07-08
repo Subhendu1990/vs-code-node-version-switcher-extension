@@ -38,6 +38,7 @@
     "nvm"
   ],
   "icon": "images/icon.png",
+  "readme": "README.md",
   "author": "Subhendu Patra",
   "repository": {
     "type": "git",
