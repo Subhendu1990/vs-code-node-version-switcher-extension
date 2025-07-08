@@ -1,0 +1,19 @@
+# Ignore source TypeScript
+src/**
+
+# Ignore test files
+test/**
+__tests__/**
+
+# Ignore dev configs
+.vscode/**
+tsconfig.json
+.eslintrc.json
+.prettierrc.json
+.gitignore
+.vscodeignore
+
+# Ignore logs and other junk
+*.log
+*.md
+!README.md

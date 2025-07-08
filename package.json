@@ -1,7 +1,7 @@
 {
   "name": "node-version-switcher",
   "displayName": "Node Version Switcher",
-  "description": "Quickly switch Node.js versions using nvm from VSCode",
+  "description": "Quickly switch Node.js versions from VSCode",
   "version": "0.0.1",
   "publisher": "subhendu-patra",
   "engines": {
@@ -37,6 +37,11 @@
     "vs-code-extension",
     "nvm"
   ],
+  "icon": "images/icon.png",
   "author": "Subhendu Patra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Subhendu1990/vs-code-node-version-switcher-extension.git"
+  },
   "license": "ISC"
 }

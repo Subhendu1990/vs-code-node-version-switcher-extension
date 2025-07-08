@@ -7,3 +7,6 @@ out/
 # VSCode
 .vscode/*
 !.vscode/launch.json
+
+#package
+*.vsix
