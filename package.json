@@ -1,6 +1,6 @@
 {
-  "name": "vs-code-node-version-switcher-extension",
-  "displayName": "VS Code Node Version Switcher",
+  "name": "node-version-switcher",
+  "displayName": "Node Version Switcher",
   "description": "Quickly switch Node.js versions using nvm from VSCode",
   "version": "0.0.1",
   "publisher": "subhendu-patra",
@@ -10,7 +10,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": ["onStartupFinished"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
