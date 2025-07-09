@@ -65,8 +65,8 @@ export class NvmService implements IVersionManagerService {
     if (version.startsWith('v')) {
       version = version.slice(1); // Remove 'v' prefix if present
     }
-    if (!/^\d+\.\d+\.\d+$/.test(version)) {
-      throw new Error(`Invalid Node version format: ${version}. Expected format is x.x.x`);
+    if (!/^\d+(\.\d+){0,2}$/.test(version)) {
+      throw new Error(`Invalid Node version format: ${version}. Expected format is x.x.x or x.x or x`);
     }
     try {
       this.shell.execute(`${SHELL_COMMANDS.NVM_USE_NODE} ${version}`);
@@ -83,8 +83,8 @@ export class NvmService implements IVersionManagerService {
     if (version.startsWith('v')) {
       version = version.slice(1); // Remove 'v' prefix if present
     }
-    if (!/^\d+\.\d+\.\d+$/.test(version)) {
-      throw new Error(`Invalid Node version format: ${version}. Expected format is x.x.x`);
+    if (!/^\d+(\.\d+){0,2}$/.test(version)) {
+      throw new Error(`Invalid Node version format: ${version}. Expected format is x.x.x or x.x or x`);
     }
     if (this.listNodeVersions().includes(version)) {
       throw new Error(`Node version ${version} is already installed.`);
