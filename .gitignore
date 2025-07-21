@@ -6,6 +6,7 @@ out/
 
 # VSCode
 .vscode/*
+.vscode-test/
 !.vscode/launch.json
 
 #package
