@@ -13,14 +13,14 @@ export function activate(context: vscode.ExtensionContext): void {
 
   const command = new SelectNodeVersionCommand(nodeService, statusBar);
 
-  vscode.window.onDidChangeWindowState((windowState) => {
+  const onWindowFocusChange = vscode.window.onDidChangeWindowState((windowState) => {
   if (windowState.focused) {
     const currentVersion = nodeService.getCurrentNodeVersion();
     statusBar.update(currentVersion); // Re-fetch and update version
   }
 });
 
-  context.subscriptions.push(command.register(), statusBar);
+  context.subscriptions.push(command.register(), statusBar, onWindowFocusChange);
 }
 
 export function deactivate(): void {
